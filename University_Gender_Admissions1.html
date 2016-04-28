@@ -1,0 +1,58 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    <script src='C:/Users/ahmed/Documents/R/win-library/3.2/rCharts/libraries/polycharts/js/polychart2.standalone.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart44b89b033b3' class = 'rChart polycharts'></div>    
+    <script type='text/javascript'>
+    var chartParams = {
+ "dom": "chart44b89b033b3",
+"width":    800,
+"height":    400,
+"layers": [
+ {
+ "x": "Gender",
+"y": "Freq",
+"data": {
+ "Admit": [ "Admitted", "Rejected", "Admitted", "Rejected", "Admitted", "Rejected", "Admitted", "Rejected", "Admitted", "Rejected", "Admitted", "Rejected", "Admitted", "Rejected", "Admitted", "Rejected", "Admitted", "Rejected", "Admitted", "Rejected", "Admitted", "Rejected", "Admitted", "Rejected" ],
+"Gender": [ "Male", "Male", "Female", "Female", "Male", "Male", "Female", "Female", "Male", "Male", "Female", "Female", "Male", "Male", "Female", "Female", "Male", "Male", "Female", "Female", "Male", "Male", "Female", "Female" ],
+"Dept": [ "A", "A", "A", "A", "B", "B", "B", "B", "C", "C", "C", "C", "D", "D", "D", "D", "E", "E", "E", "E", "F", "F", "F", "F" ],
+"Freq": [ 512, 313, 89, 19, 353, 207, 17, 8, 120, 205, 202, 391, 138, 279, 131, 244, 53, 138, 94, 299, 22, 351, 24, 317 ] 
+},
+"facet": "Admit",
+"color": "Admit",
+"type": "bar" 
+} 
+],
+"facet": {
+ "type": "wrap",
+"var": "Admit" 
+},
+"guides": [],
+"coord": [],
+"id": "chart44b89b033b3" 
+}
+    _.each(chartParams.layers, function(el){
+        el.data = polyjs.data(el.data)
+    })
+    var graph_chart44b89b033b3 = polyjs.chart(chartParams);
+</script>
+    
+    <script></script>    
+  </body>
+</html>
